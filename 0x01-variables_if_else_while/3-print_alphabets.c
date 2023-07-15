@@ -6,16 +6,18 @@
 */
 int main(void)
 {
-	char lc;
-	char uc;
+	char lc = 'a';
+	char uc = 'A';
 
-	for (uc = 'A'; uc <= 'Z'; uc++)
+	while (lc <= 'z')
 	{
-		for (lc = 'a'; lc <= 'z'; lc++)
-		{
 		putchar(lc);
-		}
+		lc++;
+	}
+	while (uc <= 'Z')
+	{
 		putchar(uc);
+		uc++;
 	}
 	putchar('\n');
 	return (0);
