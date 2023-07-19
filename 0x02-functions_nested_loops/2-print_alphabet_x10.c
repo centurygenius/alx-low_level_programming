@@ -7,20 +7,19 @@
 */
 void print_alphabet_x10(void)
 {
-	char lCase;
-	int x;
+char lCase;
+int x;
 
-	x = 0;
-	lCase = 'a';
-
-	while (x < 10)
-	{
-		while (lCase <= 'z')
-		{
-			_putchar(lCase);
-			lCase++;
-		}
-		_putchar('\n');
-		x++;
-	}
+x = 0;
+while (x < 10)
+{
+lCase = 'a';
+while (lCase <= 'z')
+{
+_putchar(lCase);
+lCase++;
+}
+_putchar('\n');
+x++;
+}
 }
