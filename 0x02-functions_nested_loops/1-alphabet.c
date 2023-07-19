@@ -8,15 +8,14 @@
 
 void print_alphabeth(void)
 {
-	char lCase;
+char lCase;
 
-	lCase = 'a';
-
-	while (lCase <= 'z')
-	{
-		_putchar(lCase);
-		lCase = lCase + 1;
-		_putchar('\n');
-	}
-	return (0);
+lCase = 'a';
+while (lCase <= 'z')
+{
+_putchar(lCase);
+lCase = lCase + 1;
+_putchar('\n');
+}
+return (0);
 }
