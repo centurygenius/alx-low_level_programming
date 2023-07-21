@@ -1,5 +1,5 @@
 #include "main.h"
-#include <dtsio.h>
+#include <stdio.h>
 
 /**
  *main - Entry point
@@ -9,9 +9,10 @@
 int main(void)
 
 {
-	unsigned long int l, n;
 
-	l = n = 612852475143;
+	unsigned long int n, l;
+
+	n = 612852475143;
 
 	for (l = 3; l < 782849; l = l + 2)
 	{
