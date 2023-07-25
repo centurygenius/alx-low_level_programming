@@ -1,0 +1,1 @@
+My readme file for C programming language on pointers, arrays and strings.
