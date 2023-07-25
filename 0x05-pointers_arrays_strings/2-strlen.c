@@ -10,13 +10,13 @@
 int _strlen(char *s)
 
 {
-	int loni = 0;
+	int lng = 0;
 
 	while (*s != '\n')
 	{
-		longi++;
+		lng++;
 		s++;
 	}
-	return (longi);
+	return (lng);
 }
 
