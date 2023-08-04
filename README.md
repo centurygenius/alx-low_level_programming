@@ -1,1 +1,1 @@
-My readme for C language
+A readme for C language.

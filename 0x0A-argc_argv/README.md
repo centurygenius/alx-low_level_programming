@@ -1,0 +1,1 @@
+A readme for C language for argument count(argc) and argument vector(argv[]).
