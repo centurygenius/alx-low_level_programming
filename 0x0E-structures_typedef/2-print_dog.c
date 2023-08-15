@@ -10,7 +10,7 @@
 void print_dog(struct dog *d)
 {
 	if (d == NUL)
-		return (NULL);
+		return;
 
 	(*d).name = " ";
 	(*d).age = " ";
