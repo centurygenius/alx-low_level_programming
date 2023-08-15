@@ -11,7 +11,7 @@ void free_dog(dog_t *d)
 	d = malloc(sizeof(struct dog_t);
 	if (d == NULL)
 		return (NULL);
-	else
+	if (d)
 	{
 		free(d->name);
 		free(d->owner);
