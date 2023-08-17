@@ -18,13 +18,11 @@ int sum_them_all(const unsigned int n, ...)
 
 	unsigned int i, sum = 0;
 
-	i = 0;
-	while (i < n)
+	for (i = 0; i < n; i++)
 	{
 		if (n == 0)
 			return (0);
 		sum += va_arg(vlists, int);
-		i++;
 	}
 	va_end(vlists);
 	return (sum);
