@@ -16,9 +16,6 @@ int sum_them_all(const unsigned int n, ...)
 
 	va_start(vlists, n);
 
-	if (n == 0)
-		return (0);
-
 	unsigned int i, sum = 0;
 
 	i = 0;
