@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * print_listint - Entry point
@@ -14,7 +15,7 @@ size_t print_listint(const listint_t *h)
 
 	while (h != NULL)
 	{
-		printf("%d\n", h->n);
+		printf("%d\n", h->next);
 		number++;
 		h = h->next;
 	}
