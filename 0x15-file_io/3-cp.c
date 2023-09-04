@@ -1,4 +1,7 @@
 #include "main.h"
+#include <stdio.h>
+#include <fcntl.h>
+#include <stdlib.h>
 
 char *_createbuff(char *file);
 void _closeFile(int fildes);
@@ -96,8 +99,8 @@ int main(int argc, char *argv[])
 	} while (rd > 0);
 
 	free(buff);
-	close_file(from);
-	close_file(to);
+	_closeFile(from);
+	_closeFile(to);
 
 	return (0);
 }
