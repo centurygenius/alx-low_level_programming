@@ -108,7 +108,7 @@ void printData(unsigned char *e_ident)
 	if (e_ident[EI_DATA] == ELFDATANONE)
 		printf("None\n");
 	else if (e_ident[EI_DATA] == ELFDATA2LSB)
-		printf ("2's complement, little endian\n");
+		printf("2's complement, little endian\n");
 	else if (e_ident[EI_DATA] == ELFDATA2MSB)
 		printf("2's complement, big endian\n");
 	else
@@ -174,8 +174,7 @@ void printOsabi(unsigned char *e_ident)
 
 void printAbi(unsigned char *e_ident)
 {
-	printf(" ABI Version: %d\n",
-		e_ident[EI_ABIVERSION]);
+	printf(" ABI Version: %d\n", e_ident[EI_ABIVERSION]);
 }
 
 /**
@@ -290,7 +289,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	printf("ELF Header:\n");
 	printMagic(header->e_ident);
 	printClass(header->e_ident);
-	printCata(header->e_ident);
+	printData(header->e_ident);
 	printVersion(header->e_ident);
 	printOsabi(header->e_ident);
 	printAbi(header->e_ident);
