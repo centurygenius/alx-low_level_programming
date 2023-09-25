@@ -1,1 +1,0 @@
-A readme for the C language bit manipulation.
