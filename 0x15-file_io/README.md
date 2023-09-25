@@ -1,1 +1,0 @@
-A readme for the C language programing for File I/O handling project.
